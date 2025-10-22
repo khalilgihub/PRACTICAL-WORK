@@ -1,0 +1,56 @@
+    body {
+      background: linear-gradient(135deg, #1a2a6c, #dbe03d, #2dccfd);
+      background-attachment: fixed;
+      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .navbar {
+      background-color: rgba(26, 42, 108, 0.9) !important;
+    }
+    .navbar-brand, .nav-link {
+      color: #fff !important;
+    }
+    .nav-link.active {
+      font-weight: bold;
+      color: #fdbb2d !important;
+    }
+    .character-card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      height: 100%;
+      overflow: hidden;
+    }
+    .character-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    .character-img {
+      height: 200px;
+      object-fit: cover;
+      width: 100%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .character-name {
+      color: #1a2a6c;
+      font-weight: bold;
+      border-bottom: 2px solid #fdbb2d;
+      padding-bottom: 5px;
+    }
+    .page-header {
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+    .back-btn {
+      background: #fdbb2d;
+      border: none;
+      color: #1a2a6c;
+      font-weight: bold;
+    }
+    .back-btn:hover {
+      background: #1a2a6c;
+      color: #fdbb2d;
+    }

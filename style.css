@@ -1,0 +1,110 @@
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h1, h2 {
+      font-weight: bold;
+    }
+    
+    .navbar {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #ffffff;
+    }
+    
+    .movie-poster {
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    
+    .media-container {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    
+    .poster-container {
+      flex: 0 0 auto;
+    }
+    
+    .video-container {
+      flex: 1;
+      min-width: 300px;
+    }
+    
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    
+    .video-wrapper iframe,
+    .video-wrapper video,
+    .video-wrapper .carousel-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      object-fit: cover;
+    }
+    
+    .video-carousel {
+      position: relative;
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 40px;
+      height: 40px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 0.7;
+    }
+    
+    .carousel-control-prev {
+      left: 10px;
+    }
+    
+    .carousel-control-next {
+      right: 10px;
+    }
+    
+    .carousel-control-prev:hover,
+    .carousel-control-next:hover {
+      opacity: 0.9;
+    }
+    
+    .carousel-indicators {
+      bottom: -40px;
+    }
+    
+    .carousel-indicators button {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin: 0 5px;
+    }
+    
+    @media (max-width: 768px) {
+      .media-container {
+        flex-direction: column;
+      }
+      
+      .video-container {
+        width: 100%;
+      }
+    }

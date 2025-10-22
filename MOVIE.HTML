@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Silent Voice</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-film"></i> Favorite Movies
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-home text-primary"></i> Home</a> 
+            </li> 
+            <li class="nav-item"> 
+              <a class="nav-link" href="characters.html"><i class="fas fa-star text-warning"></i> Characters</a> 
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                <i class="fas fa-ellipsis-h" ></i> More
+              </a>
+              <ul class="dropdown-menu">
+    <li>
+      <a class="dropdown-item" href="https://en.wikipedia.org/wiki/A_Silent_Voice_(film)">
+        <i class="fas fa-book-open me-2 text-success"></i> Wikipedia
+      </a>
+    </li>
+      <a class="dropdown-item" href="https://myanimelist.net/anime/28851/Koe_no_Katachi">
+        <i class="fas fa-external-link-alt me-2 text-danger"></i> MyAnimeList
+      </a>
+    </li>
+  </ul>
+</li>
+</ul>
+        <form class="d-flex" action="https://www.google.com/search" method="get" target="_blank">
+  <input class="form-control me-2" type="search" name="q" placeholder="Search movies...">
+  <button class="btn btn-outline-primary" type="submit">
+    <i class="fas fa-search"></i>
+  </button>
+</form>
+
+      </div>
+    </div>
+  </nav>
+
+  <header class="text-center p-4">
+  <h1 style="color: #ffffff;">A Silent Voice</h1>
+  </header>
+
+  <div class="container mt-5">
+ 
+    <div class="media-container">
+      <div class="poster-container">
+        <img src="image/Poster.jpg"
+             alt="A Silent Voice" class="img-fluid rounded shadow movie-poster" style="max-height: 500px;">
+      </div>
+      
+      <div class="video-container">
+        <div class="video-carousel">
+          <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="video-wrapper">
+                  <video controls poster="image/black.png">
+                    <source src="image/trailer1.mp4" type="video/mp4">
+                    Your browser does not support the video
+                  </video>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="video-wrapper">
+                  <video controls poster="image/black.png">
+                    <source src="image/trailer2.mp4" type="video/mp4">
+                    Your browser does not support the video
+                  </video>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="video-wrapper">
+                  <img src="image/shoko.png" 
+                       alt="A Silent Voice" class="carousel-image">
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="video-wrapper">
+                  <img src="image/shoya.png"
+                       alt="A Silent Voice scene" class="carousel-image">
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="video-wrapper">
+                  <img src="image/n1.png" 
+                       alt="A Silent Voice characters" class="carousel-image">
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+                </div>
+              <div class="carousel-item">
+                <div class="video-wrapper">
+                  <img src="image/n2.png"
+                       alt="A Silent Voice scene" class="carousel-image">
+                </div>
+                </div>
+              <div class="carousel-item">
+                <div class="video-wrapper">
+                  <img src="image/d1.png"
+                       alt="A Silent Voice scene" class="carousel-image">
+                </div>
+                </div>
+              <div class="carousel-item">
+                <div class="video-wrapper">
+                  <img src="image/d2.png"
+                       alt="A Silent Voice scene" class="carousel-image">
+                </div>
+                </div>
+              <div class="carousel-item">
+                <div class="video-wrapper">
+                  <img src="image/tree.png"
+                       alt="A Silent Voice scene" class="carousel-image">
+                </div>
+                </div>
+              <div class="carousel-item">
+                <div class="video-wrapper">
+                  <img src="image/end.png"
+                       alt="A Silent Voice scene" class="carousel-image">
+                </div>
+              </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+              <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+              <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="container my-3">
+  <div class="row g-3">
+    
+    <div class="col-12">
+      <div class="card shadow rounded-3">
+        <div class="card-header bg-primary text-white text-center rounded-top">
+          <h4 class="mb-0"><i class="fas fa-film me-2"></i>A Silent Voice</h4>
+        </div>
+        <div class="card-body text-start">
+          <p><i class="fas fa-video me-2 text-danger"></i><strong>Director:</strong> Naoko Yamada</p>
+          <p><i class="fas fa-clock me-2 text-warning"></i><strong>Duration:</strong> 2h 10m</p>
+          <p><i class="fas fa-clock me-2 text-primary"></i><strong>Show Time:</strong> 7:30 PM (GSC Cinema)</p>
+          <p><i class="fas fa-theater-masks me-2 text-success"></i><strong>Genre:</strong> Animation, Drama, Romance</p>
+          <p>
+            <i class="fas fa-star me-2 text-info"></i><strong>Rating:</strong>
+            <span class="text-warning">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+
+            </span>
+            4.5/5
+          </p>
+          <p><i class="fas fa-calendar-alt me-2 text-secondary"></i><strong>Release Date:</strong> September 17, 2016 (Japan)</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <div class="card bg-secondary text-light shadow">
+        <div class="card-body">
+          <h2 class="card-title">Synopsis</h2>
+          <p class="card-text">
+            A deaf girl, Shoko, is bullied by the popular Shoya. As Shoya continues to bully Shoko, 
+            the class turns its back on him. Shoko transfers and Shoya grows up as an outcast. 
+            Alone and depressed, the regretful Shoya finds Shoko to make amends.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+  <footer class="bg-dark text-white text-center py-3 border-top">
+    <p class="mb-0">&copy; My favourite movie <i class="fas fa-heart text-danger"></i></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const videoCarousel = document.getElementById('videoCarousel');
+      
+      videoCarousel.addEventListener('slide.bs.carousel', function (e) {
+
+        const videos = document.querySelectorAll('#videoCarousel video');
+        videos.forEach(video => {
+          video.pause();
+        });
+      });
+    });
+  </script>
+</body>
+</html>
